@@ -13,6 +13,7 @@ That beingsaid, feel free to rewrite any and all other files to suit your needs.
 ```
 git clone https://github.com/LarsHLunde/docker-openvpn-client.git
 cd docker-openvpn-client
+# Copy over passfile and profile.ovpn for your config
 docker build -t openvpn-client .
 docker run -t \
   --device=/dev/net/tun \
