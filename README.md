@@ -17,7 +17,7 @@ cd docker-openvpn-client
 docker build -t openvpn-client .
 docker run -it \
   --device=/dev/net/tun \
-  --cap-add=NET_ADMIN\
+  --cap-add=NET_ADMIN \
   --name openvpn-client \
   openvpn-client
 ```
