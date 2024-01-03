@@ -23,7 +23,7 @@ docker run -it \
 ```
 to run the test again, run:  
 ```
-docker start openvpn-client
+docker start -i openvpn-client
 ```
 
 ## Developers note
