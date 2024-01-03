@@ -21,3 +21,10 @@ docker run -t \
   openvpn-client
 docker start openvpn-client
 ```
+
+## Developers note
+### Version 1.0
+In the current version, you need to rebuild the docker  
+in order to modify username, password or ovpn file.  
+I may change it in the future, but know about this snag in  
+the current version, and as previously mentioned, feel free to branch.  
