@@ -15,11 +15,14 @@ git clone https://github.com/LarsHLunde/docker-openvpn-client.git
 cd docker-openvpn-client
 # Copy over passfile and profile.ovpn for your config
 docker build -t openvpn-client .
-docker run -t \
+docker run -it \
   --device=/dev/net/tun \
   --cap-add=NET_ADMIN\
   --name openvpn-client \
   openvpn-client
+```
+to run the test again, run:  
+```
 docker start openvpn-client
 ```
 
